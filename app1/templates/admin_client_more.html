@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -646,148 +645,260 @@
                             <span class="menu-title">Dashboard</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'load_previous_lead' %}">
-                            <i class="icon-grid menu-icon"></i>
-                            <span class="menu-title">Previous Leads</span>
-                        </a>
-                    </li>
+                    
                 </ul>
             </nav>
+
+            
             <!-- partial -->
             <div class="main-panel">
-                <div class="content-wrapper">
-                    <div class="col-lg-12 grid-margin stretch-card">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title" style="text-align:center"> LIST OF LEADS</h4>
-                                <form>
-                                    <div class="input-group input-group-sm mb-3">
-                                        <input type="text" class="form-control" id="myInput" onkeyup="myFunction()" placeholder="Search" title="Type in a name" style="color:rgb(7, 6, 6);">
-                                    </div>
-                                </form>
-                                </p>
-                                <div class="table-responsive">
-                                    <table class="table table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th>
-                                                    Name
-                                                </th>
-                                                <th>
-                                                    Contact
-                                                </th>
-                                                <th>
-                                                    Email
-                                                </th>
-                                                <th>
-                                                    Number of Concilors
-                                                </th>
-                                                <th>
-                                                    Number of clients
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody id="myTable">
-                                            <tr>
-                                                <td class="py-1">
-                    
-                                                    <a href="" style="margin-left:20px;text-decoration:none;color: black;">
-                                                        <p><span><img src="static/images/faces/face19.jpg" alt="image" /></span> Herman Beck
-                                                        </p>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    9462347896
-                                                </td>
-                                                <td>
-                                                    beck@gmail.com
-                                                </td>
-                                                <td>
-                                                    3
-                                                </td>
-                                                <td>
-                                                    4
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="py-1">
-                    
-                                                    <a href="" style="margin-left:20px;text-decoration:none;color: black;">
-                                                        <p><span><img src="static/images/faces/face18.jpg" alt="image" /></span> Messsy Adam
-                                                        </p>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    7845632189
-                                                </td>
-                                                <td>
-                                                    messyadam@gmail.com
-                                                </td>
-                                                <td>
-                                                    5
-                                                </td>
-                                                <td>
-                                                    4
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="py-1">
-                    
-                                                    <a href="" style="margin-left:20px;text-decoration:none;color: black;">
-                                                        <p><span><img src="static/images/faces/face17.jpg" alt="image" /></span> John
-                                                            Richards
-                                                        </p>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    784563278932
-                                                </td>
-                                                <td>
-                                                    richardjohns@gmail.com
-                                                </td>
-                                                <td>
-                                                    6
-                                                </td>
-                                                <td>
-                                                    5
-                    
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="py-1">
-                    
-                                                    <a href="" style="margin-left:20px;text-decoration:none;color: black;">
-                                                        <p><span><img src="static/images/faces/face16.jpg" alt="image" /></span> Peter
-                                                            Meggik
-                                                        </p>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    75563278932
-                                                </td>
-                                                <td>
-                                                    petermaggik@gmail.com
-                                                </td>
-                                                <td>
-                                                    3
-                                                </td>
-                                                <td>
-                                                   3
-                    
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                <div class="container px-1 px-md-4  mt-5">
+                    <div class="card">
+                
+                        <!-- Add class 'active' to progress -->
+                        <div class="row d-flex justify-content-center ">
+                            <div class="col-sm-12 col-12">
+                                <ul id="progressbar" class="text-center">
+                                    <li class="active step0"></li>
+                                    <li class="active step0"></li>
+                                    <li class="step0"></li>
+                                    <li class="step0"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between top">
+                            <div class="row d-flex icon-content ">
+                                <p class="py-2 mx-2"><i class="fa fa-phone" style="font-size:36px"></i></p>
+                
+                                <div class="d-sm-none d-md-block">
+                                    <p class="font-weight-bold">Enquiry &<br>Application</p>
+                                </div>
+                            </div>
+                            <div class="row d-flex icon-content">
+                                <!-- <img src="https://i.imgur.com/u1AzR7w.png"> -->
+                                <p class="py-2 mx-2"><i class="fa fa-laptop" style="font-size:36px"></i></p>
+                                <div class="d-flex flex-column">
+                                    <p class="font-weight-bold">Verifiying<br>Documents</p>
+                                </div>
+                            </div>
+                            <div class="row d-flex icon-content">
+                                <!-- <img class="icon" src="https://i.imgur.com/TkPm63y.png"> -->
+                                <p class="py-2 mx-2"><i class="fa fa-paper-plane" style="font-size:30px"></i></p>
+                                <div class="d-flex flex-column">
+                                    <p class="font-weight-bold">Applying<br>Course</p>
+                                </div>
+                            </div>
+                            <div class="row d-flex icon-content">
+                                <!-- <img class="icon" src="https://i.imgur.com/HdsziHP.png"> -->
+                                <p class="py-2 mx-2"><i class="fa fa-hourglass-2" style="font-size:36px"></i></p>
+                                <div class="d-flex flex-column">
+                                    <p class="font-weight-bold">Visa<br>Approved</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                
+                <div class="content-wrapper">
+                    <div class="row">
+                        <div class="col-12 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <!-- <p class="card-description">
+                              Basic form elements
+                            </p> -->
+                                    <div class="container" id="c1">
+                                        <form class="forms-sample">
+                                            <div id="form1">
+                                                <h4 class="card-title">Information</h4>
+                                                <div class="form-group">
+                                                    <label for="exampleInputName1">Lead Sources</label>
+                                                    <input type="text" class="form-control" id="exampleInputName1" placeholder="Lead Sources" value="Rafi" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail3">Name</label>
+                                                    <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Name" value="Hari" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword4">Phone</label>
+                                                    <input type="number" class="form-control" id="exampleInputPassword4" placeholder="Phone" value="7845125241" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword4">Place</label>
+                                                    <input type="text" class="form-control" id="exampleInputPassword4" placeholder="Place" value="Chennai" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword4">Academic Details</label>
+                                                    <input type="text" class="form-control" id="exampleInputPassword4" placeholder="Academic Details" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword4">Email</label>
+                                                    <input type="email" class="form-control" id="exampleInputPassword4" placeholder="Email" value="hari@gmail.com" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword4">Course Preference</label>
+                                                    <input type="text" class="form-control" id="exampleInputPassword4" placeholder="Course Preference" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword4">Country Preference</label>
+                                                    <input type="text" class="form-control" id="exampleInputPassword4" placeholder="Country Preference" required>
+                                                </div>
+                                                <!-- <div class="form-group">
+                                <label for="exampleInputPassword4">Intake</label>
+                                <input type="text" class="form-control" id="exampleInputPassword4" placeholder="Country Preference" required>
+                              </div> -->
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword4">College Preference</label>
+                                                    <input type="text" class="form-control" id="exampleInputPassword4" placeholder="College Preference" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword4">Feedback</label>
+                                                    <textarea raw="3" class="form-control" id="exampleInputPassword4" placeholder="Feedback" required></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword4">Last Follow Up</label>
+                                                    <input type="text" class="form-control" id="exampleInputPassword4" placeholder="Last Follow Up" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword4">Next Follow Up</label>
+                                                    <input type="text" class="form-control" id="exampleInputPassword4" placeholder="Next Follow Up" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword4">IELTS Score</label>
+                                                    <input type="text" class="form-control" id="exampleInputPassword4" placeholder="IELTS Score" required>
+                                                </div>
+                                                <button type="button" onclick="fun1()" id="btn1" class="btn btn-primary" style="float:right;">Next</button>
+                                            </div>
                     
+                                            <div id="form2">
+                                                <h4 class="card-title">Documents</h4>
+                                                <div class="form-group">
+                                                    <label for="exampleInputName1">10th Certificate</label>
+                                                    <input type="file" name="img[]" class="file-upload-default" required>
+                                                    <div class="input-group col-xs-12">
+                                                        <input type="text" class="form-control file-upload-info" disabled placeholder="10th Certificate" required>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail3">12th Certificate</label>
+                                                    <input type="file" name="img[]" class="file-upload-default" required>
+                                                    <div class="input-group col-xs-12">
+                                                        <input type="text" class="form-control file-upload-info" disabled placeholder="12th Certificate" required>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword4">Degree/Diploma/Passport</label>
+                                                    <input type="file" name="img[]" class="file-upload-default" required>
+                                                    <div class="input-group col-xs-12">
+                                                        <input type="text" class="form-control file-upload-info" required disabled placeholder="Degree/Diploma/Passport">
+                                                        
+                                                    </div>
+                                                </div>
+                                                <h4 class="card-title">Student Profile and Documents</h4>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword4">Course Details</label>
+                                                    <input type="text" class="form-control" required id="exampleInputPassword4" placeholder="Course Details">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword4">College Details</label>
+                                                    <input type="file" name="img[]" class="file-upload-default" required>
+                                                    <div class="input-group col-xs-12">
+                                                        <input type="text" class="form-control file-upload-info" required disabled placeholder="Upload College Details">
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword4">Student Documents</label>
+                                                    <input type="file" name="img[]" class="file-upload-default" required>
+                                                    <div class="input-group col-xs-12">
+                                                        <input type="text" class="form-control file-upload-info" required disabled placeholder="Upload Student Documents">
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword4">Transaction Details</label>
+                                                    <input type="file" name="img[]" class="file-upload-default" required>
+                                                    <div class="input-group col-xs-12">
+                                                        <input type="text" class="form-control file-upload-info" required disabled placeholder="Upload Transaction Details">
+                                                        
+                                                    </div>
+                                                </div>
+                                                <h4 class="card-title">Agreement</h4>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword4">Agreement Form</label>
+                                                    <input type="file" name="img[]" class="file-upload-default" required>
+                                                    <div class="input-group col-xs-12">
+                                                        <input type="text" class="form-control file-upload-info" required disabled placeholder="Upload Agreement Form">
+                                                        
+                                                    </div>
+                                                </div>
+                                                <center>
+                                                    <div class=" mt-5">
+                    
+                                                        <button type="button" class="btn btn-primary" onclick="bfun1()" id="bbtn1" class="btn btn-light">Back</button>
+                                                        
+                                                    </div>
+                                                </center>
+                                            </div>
+                    
+                                        </form>
+                    
+                    
+                    
+                                        <script>
+                                            var form1 = document.getElementById("form1");
+                                            var form2 = document.getElementById("form2");
+                                            var form3 = document.getElementById("form3");
+                                            var form4 = document.getElementById("form4");
+                                            var c1 = document.getElementById("c1");
+                                            form2.style.display = "none";
+                                            form3.style.display = "none";
+                                            form4.style.display = "none";
+                    
+                    
+                    
+                                            function fun1() {
+                    
+                                                // c1.style.height = '1320px';
+                                                form1.style.display = "none";
+                                                form2.style.display = "block";
+                                                form3.style.display = "none";
+                                                form4.style.display = "none";
+                    
+                                            }
+                    
+                                            function bfun1() {
+                    
+                                                // c1.style.height = '2320px';
+                                                form1.style.display = "block";
+                                                form2.style.display = "none";
+                                                form3.style.display = "none";
+                    
+                                            }
+                    
+                                            function fun2() {
+                    
+                                                // c1.style.height = "1530px";
+                                                form1.style.display = "none";
+                                                form2.style.display = "block";
+                                                form3.style.display = "none";
+                    
+                                            }
+                    
+                                            function bfun2() {
+                    
+                                                // c1.style.height = '1320px';
+                                                form1.style.display = "none";
+                                                form2.style.display = "block";
+                                                form3.style.display = "none";
+                    
+                                            }
+                                        </script>
                 </div>
             </div>
 
-        
             <!-- content-wrapper ends -->
             <!-- partial:partials/_footer.html -->
             <!-- partial -->
@@ -797,18 +908,127 @@
     <!-- page-body-wrapper ends -->
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-    $(document).ready(function() {
-        $("#myInput").on("keyup", function() {
-            var value = $(this).val().toLowerCase();
-            $("#myTable tr").filter(function() {
-                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-            });
-        });
-    });
-</script>
+    <style>
+            /*Icon progressbar*/
+    #progressbar {
+        margin-bottom: 30px;
+        overflow: hidden;
+        color: #455A64;
+        padding-left: 0px;
+        margin-top: 30px;
+    }
 
+    #progressbar li {
+        list-style-type: none;
+        font-size: 13px;
+        width: 24%;
+        float: left;
+        position: relative;
+        font-weight: 400;
+    }
+
+    #progressbar .step0:before {
+        font-family: FontAwesome;
+        content: "\f10c";
+        color: #fff;
+    }
+
+    #progressbar li:before {
+        width: 40px;
+        height: 40px;
+        line-height: 45px;
+        display: block;
+        font-size: 20px;
+        background: #C5CAE9;
+        border-radius: 50%;
+        margin: auto;
+        padding: 0px;
+    }
+
+    /*ProgressBar connectors*/
+    #progressbar li:after {
+        content: '';
+        width: 100%;
+        height: 12px;
+        background: #C5CAE9;
+        position: absolute;
+        left: 0;
+        top: 16px;
+        z-index: -1;
+    }
+
+    #progressbar li:last-child:after {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        position: absolute;
+        left: -50%;
+    }
+
+    #progressbar li:nth-child(2):after,
+    #progressbar li:nth-child(3):after {
+        left: -50%;
+    }
+
+    #progressbar li:first-child:after {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        position: absolute;
+        left: 50%;
+    }
+
+    #progressbar li:last-child:after {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    #progressbar li:first-child:after {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    /*Color number of the step and the connector before it*/
+    #progressbar li.active:before,
+    #progressbar li.active:after {
+        background: #651FFF;
+    }
+
+    #progressbar li.active:before {
+        font-family: FontAwesome;
+        content: "\f00c";
+    }
+
+    .icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 15px;
+    }
+
+    .icon-content {
+        padding-bottom: 20px;
+    }
+    .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: 25px;
+        margin-left: -15px;
+    }
+
+    @media screen and (max-width: 992px) {
+        .icon-content {
+            width: 50%;
+        }
+        .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: 5px;
+        }
+    }
+    </style>
     <!-- container-scroller -->
     <!-- plugins:js -->
     <script src="static/vendors/js/vendor.bundle.base.js"></script>
@@ -834,5 +1054,4 @@
 </body>
 
 </html>
-
 
